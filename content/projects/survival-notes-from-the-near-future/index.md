@@ -1,6 +1,5 @@
 +++
 title = "Survival Notes from the Near Future"
-draft = true
 date = 2026-01-01
 template = "projects/single.html"
 

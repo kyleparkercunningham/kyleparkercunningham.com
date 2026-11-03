@@ -25,8 +25,8 @@ question underneath it is simple and practical: can the whole operation be *carr
 enough, and durable enough, to keep making real, physical things from wherever the work happens to
 be?
 
-It is one investigation under a single name, *Survival Notes from the Near
-Future*: a practical guide and a meditation on
+It is one investigation under a single name, *[Survival Notes from the Near
+Future](/projects/survival-notes-from-the-near-future/)*: a practical guide and a meditation on
 moving into a reality of computing and climate change without losing what makes us human. What comes
 back from the road will gather here, week by week, all summer long.
 
@@ -42,7 +42,8 @@ sale beginning at the summer solstice.
 **Two books, bound in the forest.** First editions in the Sewn Boards structure: Wittgenstein's
 *Tractatus Logico-Philosophicus*, chosen for what it says about the limits of language in the age of
 the language model, and Whitman's *Leaves of Grass*, which Whitman set by hand. Austere limit against
-catalogue-everything abundance — the conceptual engine of the whole summer.
+catalogue-everything abundance — the conceptual engine of the whole summer. (More on the craft:
+[Agile Meteor Press](/projects/agile-meteor-press/).)
 
 {% interlude(kicker="Bound in the field", title="The bindery loses its walls too", image="editions/2026-summer/bindery-at-dusk.jpg", image_alt="Binding a book on a boulder in an aspen grove at dusk, materials spread out around the work") %}
 The *Tractatus* was sewn and cased by headlamp in a creek bottom below the Wild Iris crags,

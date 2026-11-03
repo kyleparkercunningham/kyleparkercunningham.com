@@ -36,6 +36,8 @@
     <div class="edition-orn"><span>{{ edition.extra.ornament | default(value="❦") }}</span></div>
   </header>
 
+  {% set author_extra = edition.extra %}{% include "partials/authorship.html" %}
+
   <div class="edition-body">
     {{ edition.content | safe }}
   </div>

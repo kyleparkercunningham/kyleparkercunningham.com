@@ -198,6 +198,7 @@
       <a href="{{ get_url(path='/editions/') }}">Editions</a>
       <a href="{{ get_url(path='/projects/') }}">Projects</a>
       <a href="{{ get_url(path='/log/') }}">Log</a>
+      <a href="{{ get_url(path='/manifest/') }}">Manifest</a>
     </div>
   </header>
 
@@ -303,6 +304,11 @@
       <span class="m-main">The Log<em>Production notes from the studio, posted as they happen.</em></span>
       <span class="m-meta">∞</span>
     </a>
+    <a class="h29-mrow" href="{{ get_url(path='/manifest/') }}">
+      <span class="m-no">05</span>
+      <span class="m-main">Manifest<em>The full page index — every page on the site, with honest authorship tags.</em></span>
+      <span class="m-meta">↗</span>
+    </a>
   </nav>
 </div>
 {% endblock %}
@@ -320,7 +326,7 @@
     </div>
     <div>
       <h2 class="foot-h">Contact</h2>
-      <p><a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a><a rel="me" href="https://merveilles.town/@kpc">Mastodon</a><a href="{{ get_url(path='/about/') }}">About</a></p>
+      <p><a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a><a rel="me" href="https://merveilles.town/@kpc">Mastodon</a><a href="{{ get_url(path='/about/') }}">About</a><a href="{{ get_url(path='/collect/') }}">Collect</a></p>
     </div>
     <div>
       <h2 class="foot-h">The Archive</h2>

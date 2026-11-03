@@ -26,4 +26,4 @@ These paintings are an attempt to bare my own soul and find that which is fundam
 
 Much of my oeuvre is full of ideas - explicit and figurative - stories and words put into stone. These narratives strive to put certain ideas and impressions out into the world, explicitly. My abstract works, on the other hand, are a journey inward to explore our shared human psyche, that which exists outside the realm of thoughts and ideas. These abstract shapes are the most honest paintings I create.
 
-A collection of these works is gathered in the project *Between Two Eternities*.
+A collection of these works is gathered in the project [*Between Two Eternities*](/projects/between-two-eternities/).

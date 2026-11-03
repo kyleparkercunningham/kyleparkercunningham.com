@@ -1,6 +1,5 @@
 +++
 title = "Press Kit"
-draft = true
 date = 2022-01-18
 template = "page.html"
 

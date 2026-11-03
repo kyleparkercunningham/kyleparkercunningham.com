@@ -1,6 +1,5 @@
 +++
 title = "Manifest"
-draft = true
 template = "manifest.html"
 
 [extra]
