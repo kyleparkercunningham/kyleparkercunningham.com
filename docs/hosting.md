@@ -63,6 +63,26 @@ scripts/deploy-worker.sh             # build, write the redirects, deploy
 scripts/deploy-worker.sh --dry-run   # everything but the upload
 ```
 
+### Deploys on merge
+
+Since 2026-11-13 Workers Builds watches this repo's `main` for the Worker
+`kpc-site` (Kyle's call that day, with jeannieortiz.com). A merge to main
+builds and publishes:
+
+- build command: `bash scripts/ci-build.sh`, which fetches the full git
+  history ("recently edited" reads each page's last commit), fetches Zola
+  0.22.1 for Linux (checksum pinned in the script) and runs the same steps
+  as `deploy-worker.sh`;
+- deploy command: `npx wrangler deploy`;
+- root `/`, previews off.
+
+So a PR here is a draft merged by hand, and merging is publishing. A failed
+build leaves the live site as it was (the redirects step needs the
+archive's API, and stops the build if it cannot read it); the Worker's
+Builds tab in the dashboard has the log. `scripts/deploy-worker.sh` still
+works from the Mac. Never deploy a branch by hand and leave it unmerged:
+the next merge would publish main over it.
+
 Zola must be **0.22.1** (`ZOLA=/path/to/zola` if `zola` is another version);
 0.23 breaks the templates (`TODO.md` § 2). Wrangler comes from npm
 (`WRANGLER=` overrides it) and the credentials from
