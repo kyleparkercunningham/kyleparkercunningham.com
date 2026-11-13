@@ -16,6 +16,7 @@
   <h1>{{ page.title }} <span class="manifest-sub">— every page, and who wrote it</span></h1>
   <div class="manifest-note">{{ page.content | safe }}</div>
 </header>
+{% set author_extra = page.extra %}{% include "partials/authorship.html" %}
 
 <div class="manifest-legend">
   <span class="tally"><span class="atag a-kyle">Kyle</span> <b>{{ data.totals.kyle }}</b> pages</span>

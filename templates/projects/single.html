@@ -17,6 +17,7 @@
     <div class="label">Project{% if page.date %} · {{ page.date | date(format="%Y") }}{% endif %}</div>
     <h1>{{ page.title }}</h1>
   </header>
+  {% set author_extra = page.extra %}{% include "partials/authorship.html" %}
 
   {% if page.extra.cover %}
     {% set cover_sm = resize_image(path=page.extra.cover, width=800, op="fit_width") %}

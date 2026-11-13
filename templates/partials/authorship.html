@@ -1,0 +1,9 @@
+{# A visible note on every page whose prose Claude wrote. The including
+   template sets `author_extra` to the page's extra table first. Kyle,
+   2026-11-03: "put the nine pages back up, labelled as claude's". #}
+{% if author_extra.author is defined and author_extra.author == "claude" %}
+<aside class="authorship" aria-label="Who wrote this page">
+  <span class="atag a-claude">Written by Claude</span>
+  <p>The words on this page were written by Claude, an AI model made by Anthropic, working from Kyle Parker Cunningham's catalogue and notes. The art and the facts are Kyle's; the sentences are not yet. It stands here, labelled, until he rewrites it in his own words. <a href="/manifest/">The Manifest</a> says who wrote every page.</p>
+</aside>
+{% endif %}

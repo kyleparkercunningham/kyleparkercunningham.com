@@ -31,7 +31,9 @@
     {% else %}{% set meta_desc = config.description %}{% endif %}
 
     <meta name="description" content="{{ meta_desc }}">
-    <meta name="author" content="{{ config.extra.author }}">
+    {% set meta_author = config.extra.author %}
+    {% if page %}{% if page.extra.author is defined and page.extra.author == "claude" %}{% set meta_author = "Claude (Anthropic), for " ~ config.extra.author %}{% endif %}{% endif %}
+    <meta name="author" content="{{ meta_author }}">
     <meta name="robots" content="index, follow">
     {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
 
